@@ -1,0 +1,83 @@
+@media only screen and (max-width: 500px) {
+    .h1 {
+        background-color: blueviolet;
+        width: 100%;
+    }
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 430px;
+    height: 400px;
+    perspective: 1000px;
+    border-radius: 30px;
+    margin-top: 65px;
+
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: inherit;
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+
+.flip-card-front {
+
+    color: black;
+    background-color: bisque;
+    padding: 25px;
+    border-radius: inherit;
+    text-align: left;
+}
+
+.flip-card-back {
+    background-color: bisque;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: inherit;
+    padding: 30px;
+    text-align: justify;
+
+}
+
+body {
+    background-image: url(https://source.unsplash.com/random/?calculator);
+    background-size: cover;
+}
+
+.h1 {
+    font-size: 40px;
+    background-color: bisque;
+    padding: 5px;
+    color: blue;
+    font-family: algerian;
+
+}
+
+.button1 {
+
+    margin-top: 20px;
+}
+
+.h2 {
+    font-family: alegerian;
+}
+
+h1 {
+    font-family: alegerian;
+}
